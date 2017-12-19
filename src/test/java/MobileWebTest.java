@@ -20,9 +20,11 @@ public class MobileWebTest
 
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android");
-        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"7.1.1");
+        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"6.0.1");
 
-        capabilities.setCapability(MobileCapabilityType.BROWSER_NAME,"Chrome");
+        //capabilities.setCapability(MobileCapabilityType.BROWSER_NAME,"Chrome");
+        capabilities.setCapability("appPackage","io.appery.project515259");
+        capabilities.setCapability("appActivity","io.appery.project515259.MainActivity");
         //capabilities.setCapability((MobileCapabilityType.BROWSER_VERSION, "latest");
         //capabilities.setCapability(MobileCapabilityType.FULL_RESET, true);
 
